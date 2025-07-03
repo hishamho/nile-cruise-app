@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Royal Beau Rivage</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="js/language.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <!-- إشعار الوجبة -->
+  <div id="meal-notification" class="notification hidden">
+    <p id="notification-text"></p>
+    <audio id="notification-sound" src="sounds/notify.mp3"></audio>
+  </div>
+
+  <div class="background">
+    <div class="login-box">
+      <h2 data-i18n="login_title">تسجيل الدخول للإنترنت</h2>
+      
+      <form method="get" action="/login">
+        <input type="text" name="username" placeholder="أدخل الكود" data-i18n-placeholder="enter_code" />
+        <button type="submit" data-i18n="login_button">دخول</button>
+      </form>
+
+      <div class="language-switch">
+        <button onclick="setLanguage('ar')">عربي</button>
+        <button onclick="setLanguage('en')">English</button>
+        <button onclick="setLanguage('it')">Italiano</button>
+        <button onclick="setLanguage('es')">Español</button>
+        <button onclick="setLanguage('jp')">日本語</button>
+      </div>
+
+      <div class="icons-row">
+        <div class="icon" onclick="openModal('temples-modal')">
+          <span>🛕</span>
+          <div data-i18n="temples">المعابد</div>
+        </div>
+        <div class="icon" onclick="openModal('meals-modal')">
+          <span>🍽️</span>
+          <div data-i18n="meals">الوجبات</div>
+        </div>
+        <div class="icon" onclick="openModal('parties-modal')">
+          <span>🎉</span>
+          <div data-i18n="parties">الحفلات</div>
+        </div>
+        <div class="icon" onclick="openModal('services-modal')">
+          <span>🛎️</span>
+          <div data-i18n="services">الخدمات</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================= -->
+  <!-- النوافذ المنبثقة (Modals) -->
+  <!-- ======================================================= -->
+
+  <!-- ✅ مودال الوجبات (تم إصلاحه) -->
+  <div id="meals-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('meals-modal')">&times;</span>
+      <h2 data-i18n="meals_title">الوجبات ومواعيدها</h2>
+      <div class="meal-cards">
+        <div class="meal-card">
+          <img src="images/breakfast.jpg" alt="Breakfast" />
+          <h3 data-i18n="breakfast">الإفطار</h3>
+          <p data-i18n="breakfast_time">07:00 - 09:00 صباحًا</p>
+        </div>
+        <div class="meal-card">
+          <img src="images/lunch.jpg" alt="Lunch" />
+          <h3 data-i18n="lunch">الغداء</h3>
+          <p data-i18n="lunch_time">13:00 - 15:00 مساءً</p>
+        </div>
+        <div class="meal-card">
+          <img src="images/dinner.jpg" alt="Dinner" />
+          <h3 data-i18n="dinner">العشاء</h3>
+          <p data-i18n="dinner_time">20:00 - 22:00 مساءً</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ مودال المعابد -->
+  <div id="temples-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('temples-modal')">&times;</span>
+      <h2 data-i18n="temples_title">المعابد التاريخية</h2>
+      <div class="temple-cards" id="temple-cards-container">
+        <!-- كروت المعابد ستتولد هنا من JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ مودال تفاصيل المعبد -->
+  <div id="temple-details-modal" class="modal hidden">
+    <div class="modal-content temple-details">
+      <span class="close-btn" onclick="closeModal('temple-details-modal')">&times;</span>
+      <img id="temple-detail-image" src="" alt="" />
+      <h2 id="temple-detail-title"></h2>
+      <p id="temple-detail-description"></p>
+      <div id="temple-detail-info"></div>
+    </div>
+  </div>
+
+  <!-- ✅ مودال الحفلات -->
+  <div id="parties-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('parties-modal')">&times;</span>
+      <h2 data-i18n="parties_title">برنامج الحفلات</h2>
+      <div id="party-cards-container">
+        <!-- كروت الحفلات ستتولد هنا من JavaScript -->
+      </div>
+    </div>
+  </div>
+  
+  <!-- ✅ مودال الخدمات -->
+  <div id="services-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('services-modal')">&times;</span>
+      <h2 data-i18n="services_title">مركز خدمة النزيل</h2>
+      <div id="service-cards-container">
+        <!-- بطاقات الخدمات ستتولد هنا من JavaScript -->
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+<!-- (الجديد) الشعار التسويقي -->
+<p class="slogan-text" data-i18n="slogan_text"></p>

@@ -1,0 +1,74 @@
+{
+  "belly_dance": {
+    "image": "images/belly-dance.jpg",
+    "time": "09:30 PM",
+    "ar": {
+      "name": "ليلة الرقص الشرقي",
+      "description": "استمتعوا بسحر وأناقة الرقص الشرقي الأصيل على أنغام الموسيقى العربية الساحرة في قلب النيل."
+    },
+    "en": {
+      "name": "Belly Dance Night",
+      "description": "Enjoy the magic and elegance of authentic belly dancing to the enchanting rhythms of Arabic music in the heart of the Nile."
+    },
+    "es": {
+      "name": "Noche de Danza del Vientre",
+      "description": "Disfruta de la magia y elegancia de la auténtica danza del vientre con los encantadores ritmos de la música árabe en el corazón del Nilo."
+    },
+    "it": {
+      "name": "Notte di Danza del Ventre",
+      "description": "Goditi la magia e l'eleganza dell'autentica danza del ventre ai ritmi incantevoli della musica araba nel cuore del Nilo."
+    },
+    "jp": {
+      "name": "ベリーダンスナイト",
+      "description": "ナイルの中心で、アラビア音楽の魅惑的なリズムに合わせて、本物のベリーダンスの魔法と優雅さをお楽しみください。"
+    }
+  },
+  "nubian_show": {
+    "image": "images/nubian-show.jpg",
+    "time": "09:00 PM",
+    "ar": {
+      "name": "عرض نوبي تراثي",
+      "description": "انغمسوا في أجواء بلاد الذهب مع عرض نوبي يجمع بين الرقصات المبهجة والأغاني التراثية والأزياء الملونة."
+    },
+    "en": {
+      "name": "Nubian Heritage Show",
+      "description": "Immerse yourself in the atmosphere of the Land of Gold with a Nubian show combining joyful dances, folk songs, and colorful costumes."
+    },
+    "es": {
+      "name": "Espectáculo del Patrimonio Nubio",
+      "description": "Sumérgete en la atmósfera de la Tierra del Oro con un espectáculo nubio que combina danzas alegres, canciones populares y trajes coloridos."
+    },
+    "it": {
+      "name": "Spettacolo del Patrimonio Nubiano",
+      "description": "Immergiti nell'atmosfera della Terra dell'Oro con uno spettacolo nubiano che combina danze gioiose, canti popolari e costumi colorati."
+    },
+    "jp": {
+      "name": "ヌビア遺産ショー",
+      "description": "楽しいダンス、民謡、カラフルな衣装を組み合わせたヌビアのショーで、黄金の地の雰囲気に浸ってください。"
+    }
+  },
+  "folklore_dance": {
+    "image": "images/folklore_dance.jpg",
+    "time": "08:30 PM",
+    "ar": {
+      "name": "رقصة التنورة الفلكلورية",
+      "description": "شاهدوا عرض التنورة المذهل، رقصة صوفية تدور حول نفسها في عرض روحاني بصري يأسر الألباب."
+    },
+    "en": {
+      "name": "Folklore Tannoura Dance",
+      "description": "Witness the stunning Tannoura show, a Sufi dance that spins in a captivating spiritual and visual performance."
+    },
+    "es": {
+      "name": "Danza Folclórica Tannoura",
+      "description": "Presencia el impresionante espectáculo de Tannoura, una danza sufí que gira en una cautivadora actuación espiritual y visual."
+    },
+    "it": {
+      "name": "Danza Folcloristica Tannoura",
+      "description": "Assisti allo straordinario spettacolo della Tannoura, una danza sufi che rotea in un'affascinante performance spirituale e visiva."
+    },
+    "jp": {
+      "name": "フォークロア・タンヌーラダンス",
+      "description": "魅惑的なスピリチュアルで視覚的なパフォーマンスで回転するスーフィーのダンス、見事なタンヌーラショーをご覧ください。"
+    }
+  }
+}
