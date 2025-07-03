@@ -1,0 +1,146 @@
+{
+  "luxor_temple": {
+    "image": "images/luxor.jpg",
+    "coords": { "top": "28%", "left": "30%" },
+    "ar": {
+      "name": "معبد الأقصر",
+      "description": "يقع على الضفة الشرقية للنيل في مدينة الأقصر، وكان مكرسًا لثالوث طيبة. يتميز بتصميمه الذي شارك في بنائه العديد من الفراعنة."
+    },
+    "en": {
+      "name": "Luxor Temple",
+      "description": "Located on the east bank of the Nile in Luxor, it was dedicated to the Theban Triad. Its design was contributed to by many pharaohs."
+    },
+    "es": {
+      "name": "Templo de Luxor",
+      "description": "Situado en la orilla oriental del Nilo en Luxor, fue dedicado a la Tríada Tebana. A su diseño contribuyeron muchos faraones."
+    },
+    "it": {
+      "name": "Tempio di Luxor",
+      "description": "Situato sulla sponda orientale del Nilo a Luxor, era dedicato alla Triade Tebana. Al suo design hanno contribuito molti faraoni."
+    },
+    "jp": {
+      "name": "ルクソール神殿",
+      "description": "ルクソールのナイル川東岸に位置し、テーベの三神に捧げられました。その設計には多くのファラオが貢献しました。"
+    }
+  },
+  "karnak_temple": {
+    "image": "images/karnak.jpg",
+    "coords": { "top": "20%", "left": "33%" },
+    "ar": {
+      "name": "معابد الكرنك",
+      "description": "أكبر مجمع ديني في العالم. مدينة من المعابد والأعمدة والمسلات التي بنيت على مدى 2000 عام."
+    },
+    "en": {
+      "name": "Karnak Temples",
+      "description": "The largest religious complex in the world. A city of temples, columns, and obelisks built over 2000 years."
+    },
+    "es": {
+      "name": "Templos de Karnak",
+      "description": "El complejo religioso más grande del mundo. Una ciudad de templos, columnas y obeliscos construida durante más de 2000 años."
+    },
+    "it": {
+      "name": "Templi di Karnak",
+      "description": "Il più grande complesso religioso del mondo. Una città di templi, colonne e obelischi costruita in oltre 2000 anni."
+    },
+    "jp": {
+      "name": "カルナック神殿",
+      "description": "世界最大の宗教施設。2000年以上にわたって建設された神殿、柱、オベリスクの都市。"
+    }
+  },
+  "edfu_temple": {
+    "image": "images/edfu.jpg",
+    "coords": { "top": "45%", "left": "45%" },
+    "ar": {
+      "name": "معبد إدفو",
+      "description": "أحد أفضل المعابد المصرية القديمة المحفوظة، وهو مكرس للإله الصقر حورس."
+    },
+    "en": {
+      "name": "Edfu Temple",
+      "description": "One of the best-preserved ancient Egyptian temples, dedicated to the falcon god Horus."
+    },
+    "es": {
+      "name": "Templo de Edfu",
+      "description": "Uno de los templos del antiguo Egipto mejor conservados, dedicado al dios halcón Horus."
+    },
+    "it": {
+      "name": "Tempio di Edfu",
+      "description": "Uno dei templi dell'antico Egitto meglio conservati, dedicato al dio falco Horus."
+    },
+    "jp": {
+      "name": "エドフ神殿",
+      "description": "ハヤブサの神ホルスに捧げられた、最も保存状態の良い古代エジプトの神殿の一つ。"
+    }
+  },
+  "komombo_temple": {
+    "image": "images/komombo.jpg",
+    "coords": { "top": "60%", "left": "55%" },
+    "ar": {
+      "name": "معبد كوم أمبو",
+      "description": "معبد فريد مزدوج مخصص لعبادة إلهين في آن واحد: سوبك التمساح وحورس الصقر."
+    },
+    "en": {
+      "name": "Kom Ombo Temple",
+      "description": "A unique double temple dedicated to the worship of two gods simultaneously: Sobek the crocodile and Horus the falcon."
+    },
+    "es": {
+      "name": "Templo de Kom Ombo",
+      "description": "Un templo doble único dedicado a la adoración de dos dioses simultáneamente: Sobek el cocodrilo y Horus el halcón."
+    },
+    "it": {
+      "name": "Tempio di Kom Ombo",
+      "description": "Un tempio doppio unico dedicato al culto di due dei contemporaneamente: Sobek il coccodrillo e Horus il falco."
+    },
+    "jp": {
+      "name": "コム・オンボ神殿",
+      "description": "ワニのソベクとハヤブサのホルスの2人の神を同時に崇拝することに捧げられたユニークな二重神殿。"
+    }
+  },
+  "aswan_city": {
+    "image": "images/aswan_city.jpg",
+    "coords": { "top": "75%", "left": "68%" },
+    "ar": {
+      "name": "مدينة أسوان",
+      "description": "جوهرة النيل الساحرة، تشتهر بمناظرها الطبيعية الخلابة وثقافتها النوبية الغنية وجوها الهادئ."
+    },
+    "en": {
+      "name": "Aswan City",
+      "description": "The charming jewel of the Nile, famous for its stunning landscapes, rich Nubian culture, and tranquil atmosphere."
+    },
+    "es": {
+      "name": "Ciudad de Asuán",
+      "description": "La encantadora joya del Nilo, famosa por sus impresionantes paisajes, su rica cultura nubia y su ambiente tranquilo."
+    },
+    "it": {
+      "name": "Città di Assuan",
+      "description": "L'incantevole gioiello del Nilo, famosa per i suoi paesaggi mozzafiato, la ricca cultura nubiana e l'atmosfera tranquilla."
+    },
+    "jp": {
+      "name": "アスワン市",
+      "description": "ナイル川の魅力的な宝石。見事な風景、豊かなヌビア文化、静かな雰囲気で有名です。"
+    }
+  },
+  "high_dam": {
+    "image": "images/high_dam.jpg",
+    "coords": { "top": "85%", "left": "72%" },
+    "ar": {
+      "name": "السد العالي",
+      "description": "مشروع هندسي عملاق في القرن العشرين، حمى مصر من الفيضانات وساهم في توليد الكهرباء."
+    },
+    "en": {
+      "name": "The High Dam",
+      "description": "A colossal engineering project of the 20th century, which protected Egypt from floods and contributed to electricity generation."
+    },
+    "es": {
+      "name": "La Alta Presa",
+      "description": "Un colosal proyecto de ingeniería del siglo XX, que protegió a Egipto de las inundaciones y contribuyó a la generación de electricidad."
+    },
+    "it": {
+      "name": "La Diga di Assuan",
+      "description": "Un colossale progetto di ingegneria del XX secolo, che ha protetto l'Egitto dalle inondazioni e ha contribuito alla generazione di elettricità."
+    },
+    "jp": {
+      "name": "ハイダム",
+      "description": "20世紀の巨大なエンジニアリングプロジェクト。エジプトを洪水から守り、発電に貢献しました。"
+    }
+  }
+}

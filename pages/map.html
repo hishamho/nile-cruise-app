@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!-- The lang and dir attributes will be set by JavaScript -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The title will be set by JavaScript -->
+    <title>خريطة الرحلة التفاعلية</title>
+    <style>
+        /* --- تصميم أساسي للصفحة --- */
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        body {
+            background-color: #1a202c;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        /* --- تصميم حاوية الخريطة --- */
+        .map-container {
+            width: 100%;
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* --- تصميم رأس الصفحة --- */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: #f4d03f;
+        }
+
+        .back-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .back-btn:hover { background: rgba(255, 255, 255, 0.2); }
+
+        /* --- (الجديد) تصميم منطقة الخريطة التفاعلية --- */
+        .interactive-map-area {
+            position: relative; /* مهم لوضع الدبابيس فوق الصورة */
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .interactive-map-area img {
+            width: 100%;
+            display: block;
+        }
+
+        /* --- (الجديد) تصميم دبوس الموقع --- */
+        .map-point {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background-color: #f4d03f;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            cursor: pointer;
+            transform: translate(-50%, -50%); /* لتوسيط الدبوس بالضبط */
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(244, 208, 63, 0.7);
+        }
+        .map-point::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #f4d03f;
+            animation: pulse 1.5s infinite;
+        }
+        .map-point:hover {
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.7; }
+            70% { transform: scale(2.5); opacity: 0; }
+            100% { transform: scale(1); opacity: 0; }
+        }
+
+        /* --- (الجديد) تصميم نافذة تفاصيل النقطة --- */
+        .point-modal {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(8px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s ease;
+        }
+        .point-modal.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .point-modal-content {
+            background: #2d3748;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transform: scale(0.9);
+            transition: all 0.4s ease;
+        }
+        .point-modal.show .point-modal-content {
+            transform: scale(1);
+        }
+
+        .point-modal-content img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        .point-modal-content h2 {
+            font-size: 26px;
+            color: #f4d03f;
+            margin: 15px 0;
+        }
+        .point-modal-content p {
+            font-size: 16px;
+            line-height: 1.7;
+            padding: 0 25px 25px;
+        }
+        .point-modal-close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="map-container">
+        <header>
+            <h1 data-i18n="map_header">خريطة الرحلة التفاعلية</h1>
+            <button class="back-btn" onclick="history.back()" data-i18n="map_back_button">عودة</button>
+        </header>
+
+        <div class="interactive-map-area" id="map-area">
+            <!-- استخدم صورة واحدة فقط كخلفية للخريطة -->
+            <img src="../images/map-luxor-aswan.jpg" alt="خريطة الرحلة النيلية">
+            <!-- الدبابيس ستتولد هنا من JavaScript -->
+        </div>
+    </div>
+
+    <!-- (الجديد) نافذة تفاصيل النقطة المنبثقة -->
+    <div class="point-modal" id="point-modal">
+        <div class="point-modal-content">
+            <button class="point-modal-close-btn" onclick="closePointModal()">&times;</button>
+            <img id="point-modal-image" src="" alt="">
+            <h2 id="point-modal-title"></h2>
+            <p id="point-modal-description"></p>
+        </div>
+    </div>
+
+    <script>
+        // --- (الجديد) نظام الخريطة التفاعلية ---
+
+        let mapPointsData = {};
+        const currentLang = localStorage.getItem('language') || 'ar';
+
+        // 1. تحميل بيانات نقاط الخريطة
+        async function loadMapPoints() {
+            try {
+                const response = await fetch('../data/map_points.json');
+                mapPointsData = await response.json();
+                renderMapPoints();
+            } catch (error) {
+                console.error("Failed to load map points:", error);
+            }
+        }
+
+        // 2. عرض الدبابيس على الخريطة
+        function renderMapPoints() {
+            const mapArea = document.getElementById('map-area');
+            Object.keys(mapPointsData).forEach(key => {
+                const pointData = mapPointsData[key];
+                const pointElement = document.createElement('div');
+                pointElement.className = 'map-point';
+                pointElement.style.top = pointData.coords.top;
+                pointElement.style.left = pointData.coords.left;
+                pointElement.setAttribute('onclick', `openPointModal('${key}')`);
+                mapArea.appendChild(pointElement);
+            });
+        }
+
+        // 3. فتح نافذة تفاصيل النقطة
+        function openPointModal(key) {
+            const pointData = mapPointsData[key];
+            if (!pointData) return;
+
+            const langData = pointData[currentLang] || pointData['ar'];
+
+            document.getElementById('point-modal-image').src = `../${pointData.image}`;
+            document.getElementById('point-modal-title').textContent = langData.name;
+            document.getElementById('point-modal-description').textContent = langData.description;
+
+            document.getElementById('point-modal').classList.add('show');
+        }
+
+        // 4. إغلاق نافذة التفاصيل
+        function closePointModal() {
+            document.getElementById('point-modal').classList.remove('show');
+        }
+
+        // --- نظام الترجمة المدمج لهذه الصفحة ---
+        const translations = {
+            ar: { map_title: "خريطة الرحلة", map_header: "خريطة الرحلة التفاعلية", map_back_button: "عودة" },
+            en: { map_title: "Trip Map", map_header: "Interactive Trip Map", map_back_button: "Back" },
+            es: { map_title: "Mapa del Viaje", map_header: "Mapa Interactivo del Viaje", map_back_button: "Volver" },
+            it: { map_title: "Mappa del Viaggio", map_header: "Mappa Interattiva del Viaggio", map_back_button: "Indietro" },
+            jp: { map_title: "旅行地図", map_header: "インタラクティブ旅行地図", map_back_button: "戻る" }
+        };
+
+        function applyTranslations(lang) {
+            const langData = translations[lang] || translations['ar'];
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (langData[key]) el.textContent = langData[key];
+            });
+            document.title = langData.map_title;
+        }
+
+        // --- التشغيل عند تحميل الصفحة ---
+        document.addEventListener('DOMContentLoaded', () => {
+            document.documentElement.lang = currentLang;
+            document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+            applyTranslations(currentLang);
+            loadMapPoints(); // تحميل نقاط الخريطة
+        });
+    </script>
+
+</body>
+</html>

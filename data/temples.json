@@ -1,0 +1,194 @@
+{
+  "karnak": {
+    "image": "images/karnak.jpg",
+    "ar": {
+      "name": "معبد الكرنك",
+      "shortDesc": "أكبر مجمع ديني في العالم.",
+      "fullDescription": "مجمع معابد الكرنك هو مجموعة من المعابد والمقاصير والمسلات والأعمدة. استمر بناؤه على مدى قرون عديدة، وهو مكرس لثالوث طيبة المكون من آمون وموت وخونسو.",
+      "location": "الأقصر، الضفة الشرقية",
+      "buildDate": "2055 ق.م - 100 م",
+      "mainGod": "آمون رع",
+      "visitTime": "ساعتان"
+    },
+    "en": {
+      "name": "Karnak Temple",
+      "shortDesc": "The largest religious complex in the world.",
+      "fullDescription": "The Karnak Temple Complex is a vast mix of decayed temples, chapels, pylons, and other buildings. Dedicated to the Theban triad of Amun, Mut, and Khonsu.",
+      "location": "Luxor, East Bank",
+      "buildDate": "2055 BC - 100 AD",
+      "mainGod": "Amun-Ra",
+      "visitTime": "Two hours"
+    },
+    "es": {
+      "name": "Templo de Karnak",
+      "shortDesc": "El complejo religioso más grande del mundo.",
+      "fullDescription": "El Complejo del Templo de Karnak es una vasta mezcla de templos, capillas, pilonos y otros edificios. Dedicado a la tríada tebana de Amón, Mut y Jonsu.",
+      "location": "Luxor, Orilla Oriental",
+      "buildDate": "2055 a.C. - 100 d.C.",
+      "mainGod": "Amón-Ra",
+      "visitTime": "Dos horas"
+    },
+    "it": {
+      "name": "Tempio di Karnak",
+      "shortDesc": "Il più grande complesso religioso del mondo.",
+      "fullDescription": "Il Complesso del Tempio di Karnak è un vasto insieme di templi, cappelle, piloni e altri edifici. Dedicato alla triade tebana di Amon, Mut e Khonsu.",
+      "location": "Luxor, Riva Est",
+      "buildDate": "2055 a.C. - 100 d.C.",
+      "mainGod": "Amon-Ra",
+      "visitTime": "Due ore"
+    },
+    "jp": {
+      "name": "カルナック神殿",
+      "shortDesc": "世界最大の宗教施設。",
+      "fullDescription": "カルナック神殿複合体は、荒廃した神殿、礼拝堂、パイロン、その他の建物の広大な混合物です。アメン、ムト、コンスのテベスの三神に捧げられています。",
+      "location": "ルクソール、東岸",
+      "buildDate": "紀元前2055年 - 紀元100年",
+      "mainGod": "アメン・ラー",
+      "visitTime": "2時間"
+    }
+  },
+  "edfu": {
+    "image": "images/edfu.jpg",
+    "ar": {
+      "name": "معبد إدفو",
+      "shortDesc": "أحد أفضل المعابد المصرية القديمة المحفوظة.",
+      "fullDescription": "معبد إدفو مكرس للإله حورس. وهو من أفضل المعابد المصرية القديمة المحفوظة لأنه بني في وقت متأخر نسبيًا خلال العصر البطلمي.",
+      "location": "إدفو، بين الأقصر وأسوان",
+      "buildDate": "237 - 57 ق.م",
+      "mainGod": "حورس",
+      "visitTime": "ساعة ونصف"
+    },
+    "en": {
+      "name": "Edfu Temple",
+      "shortDesc": "One of the best-preserved ancient Egyptian temples.",
+      "fullDescription": "The Temple of Edfu is dedicated to the falcon god Horus. It is one of the best-preserved temples in Egypt because it was built relatively late.",
+      "location": "Edfu, between Luxor and Aswan",
+      "buildDate": "237 - 57 BC",
+      "mainGod": "Horus",
+      "visitTime": "One and a half hours"
+    },
+    "es": {
+      "name": "Templo de Edfu",
+      "shortDesc": "Uno de los templos egipcios antiguos mejor conservados.",
+      "fullDescription": "El Templo de Edfu está dedicado al dios halcón Horus. Es uno de los templos mejor conservados de Egipto porque fue construido relativamente tarde.",
+      "location": "Edfu, entre Luxor y Asuán",
+      "buildDate": "237 - 57 a.C.",
+      "mainGod": "Horus",
+      "visitTime": "Una hora y media"
+    },
+    "it": {
+      "name": "Tempio di Edfu",
+      "shortDesc": "Uno dei templi egizi antichi meglio conservati.",
+      "fullDescription": "Il Tempio di Edfu è dedicato al dio falco Horus. È uno dei templi meglio conservati in Egitto perché è stato costruito relativamente tardi.",
+      "location": "Edfu, tra Luxor e Assuan",
+      "buildDate": "237 - 57 a.C.",
+      "mainGod": "Horus",
+      "visitTime": "Un'ora e mezza"
+    },
+    "jp": {
+      "name": "エドフ神殿",
+      "shortDesc": "最も保存状態の良い古代エジプトの神殿の一つ。",
+      "fullDescription": "エドフ神殿はハヤブサの神ホルスに捧げられています。比較的新しい時代に建てられたため、エジプトで最も保存状態の良い神殿の一つです。",
+      "location": "エドフ、ルクソールとアスワンの間",
+      "buildDate": "紀元前237年 - 57年",
+      "mainGod": "ホルス",
+      "visitTime": "1時間半"
+    }
+  },
+  "komombo": {
+    "image": "images/komombo.jpg",
+    "ar": {
+      "name": "معبد كوم أمبو",
+      "shortDesc": "معبد فريد مزدوج مخصص لسوبك وحورس الأكبر.",
+      "fullDescription": "يقع معبد كوم أمبو على تل يطل على النيل، وهو معبد مزدوج فريد من نوعه. أحد الجانبين مخصص للإله التمساح سوبك، بينما الجانب الآخر مخصص للإله الصقر حورس الأكبر.",
+      "location": "كوم أمبو، شمال أسوان",
+      "buildDate": "180 - 47 ق.م",
+      "mainGod": "سوبك وحورس",
+      "visitTime": "ساعة"
+    },
+    "en": {
+      "name": "Temple of Kom Ombo",
+      "shortDesc": "A unique double temple dedicated to Sobek and Horus the Elder.",
+      "fullDescription": "Sitting on a promontory overlooking the Nile, Kom Ombo is a unique double temple. One side is dedicated to the crocodile god Sobek, the other to the falcon god Horus the Elder.",
+      "location": "Kom Ombo, north of Aswan",
+      "buildDate": "180 - 47 BC",
+      "mainGod": "Sobek and Horus",
+      "visitTime": "One hour"
+    },
+    "es": {
+      "name": "Templo de Kom Ombo",
+      "shortDesc": "Un templo doble único dedicado a Sobek y Horus el Viejo.",
+      "fullDescription": "Situado en un promontorio con vistas al Nilo, Kom Ombo es un templo doble único. Un lado está dedicado al dios cocodrilo Sobek, el otro al dios halcón Horus el Viejo.",
+      "location": "Kom Ombo, al norte de Asuán",
+      "buildDate": "180 - 47 a.C.",
+      "mainGod": "Sobek y Horus",
+      "visitTime": "Una hora"
+    },
+    "it": {
+      "name": "Tempio di Kom Ombo",
+      "shortDesc": "Un tempio doppio unico dedicato a Sobek e Horus il Vecchio.",
+      "fullDescription": "Situato su un promontorio che domina il Nilo, Kom Ombo è un tempio doppio unico. Un lato è dedicato al dio coccodrillo Sobek, l'altro al dio falco Horus il Vecchio.",
+      "location": "Kom Ombo, a nord di Assuan",
+      "buildDate": "180 - 47 a.C.",
+      "mainGod": "Sobek e Horus",
+      "visitTime": "Un'ora"
+    },
+    "jp": {
+      "name": "コム・オンボ神殿",
+      "shortDesc": "ソベクとホルス長老に捧げられたユニークな二重神殿。",
+      "fullDescription": "ナイル川を見下ろす岬に位置するコム・オンボは、ユニークな二重神殿です。片側はワニの神ソベクに、もう片側はハヤブサの神ホルス長老に捧げられています。",
+      "location": "コム・オンボ、アスワンの北",
+      "buildDate": "紀元前180年 - 47年",
+      "mainGod": "ソベクとホルス",
+      "visitTime": "1時間"
+    }
+  },
+  "abusimbel": {
+    "image": "images/abusimbel.jpg",
+    "ar": {
+      "name": "معبد أبو سمبل",
+      "shortDesc": "معبدان ضخمان منحوتان في الصخر في جنوب مصر.",
+      "fullDescription": "يقع معبدا أبو سمبل في النوبة، وقد تم نحتهما في جانب الجبل في عهد الملك رمسيس الثاني في القرن الثالث عشر قبل الميلاد، كنصب دائم له وللملكة نفرتاري.",
+      "location": "أبو سمبل، جنوب أسوان",
+      "buildDate": "1264 - 1244 ق.م",
+      "mainGod": "رع حور آختي، آمون، بتاح",
+      "visitTime": "ساعتان"
+    },
+    "en": {
+      "name": "Abu Simbel Temple",
+      "shortDesc": "Two massive rock-cut temples in southern Egypt.",
+      "fullDescription": "The Abu Simbel temples are two massive rock temples in Nubia, carved out of the mountainside during the reign of Pharaoh Ramesses II as a lasting monument to himself and his queen Nefertari.",
+      "location": "Abu Simbel, south of Aswan",
+      "buildDate": "1264 - 1244 BC",
+      "mainGod": "Ra-Horakhty, Amun, Ptah",
+      "visitTime": "Two hours"
+    },
+    "es": {
+      "name": "Templo de Abu Simbel",
+      "shortDesc": "Dos enormes templos excavados en la roca en el sur de Egipto.",
+      "fullDescription": "Los templos de Abu Simbel son dos enormes templos de roca en Nubia, excavados en la ladera de la montaña durante el reinado del faraón Ramsés II como monumento duradero para él y su reina Nefertari.",
+      "location": "Abu Simbel, al sur de Asuán",
+      "buildDate": "1264 - 1244 a.C.",
+      "mainGod": "Ra-Horakhty, Amón, Ptah",
+      "visitTime": "Dos horas"
+    },
+    "it": {
+      "name": "Tempio di Abu Simbel",
+      "shortDesc": "Due imponenti templi scavati nella roccia nel sud dell'Egitto.",
+      "fullDescription": "I templi di Abu Simbel sono due imponenti templi rupestri in Nubia, scavati nella montagna durante il regno del faraone Ramesse II come monumento duraturo a sé stesso e alla sua regina Nefertari.",
+      "location": "Abu Simbel, a sud di Assuan",
+      "buildDate": "1264 - 1244 a.C.",
+      "mainGod": "Ra-Horakhty, Amon, Ptah",
+      "visitTime": "Due ore"
+    },
+    "jp": {
+      "name": "アブ・シンベル神殿",
+      "shortDesc": "エジプト南部の2つの巨大な岩窟神殿。",
+      "fullDescription": "アブ・シンベル神殿はヌビアにある2つの巨大な岩窟神殿で、ファラオ・ラムセス2世の治世中に、彼自身と彼の女王ネフェルタリへの永遠の記念碑として山腹から彫られました。",
+      "location": "アブ・シンベル、アスワンの南",
+      "buildDate": "紀元前1264年 - 1244年",
+      "mainGod": "ラー・ホルアクティ、アメン、プタハ",
+      "visitTime": "2時間"
+    }
+  }
+}
